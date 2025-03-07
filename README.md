@@ -18,3 +18,6 @@ JS library (server):
 - socket-io-client
 - express (un framework basés sur les applications web)
 - node:http
+
+
+Cablage arduino : ![alt text](./img/cable.png)
