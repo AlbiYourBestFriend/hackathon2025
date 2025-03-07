@@ -1,0 +1,38 @@
+
+html
+  head
+    title= title
+    link(rel="stylesheet", href="style.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js")
+    script(src="https://cdn.rawgit.com/mrdoob/three.js/r128/examples/js/loaders/OBJLoader.js")
+    script(src="https://cdn.rawgit.com/mrdoob/three.js/r128/examples/js/loaders/MTLLoader.js")
+
+
+  body
+    div(id='fond')
+    div(id='chargement')
+    div(id='tete')
+    div(id='teteGif')
+    div(id='barreStress')
+
+
+
+  div
+      textarea(id='questionInput', placeholder='Posez votre question ici...')
+      button(id='envoyerQuestion') Poser la question
+    
+  div(id='reponseContainer')
+
+  audio#son1(src="text.wav")
+  audio#son2(src="text.wav")
+  audio#insulte1(src="insulte/SALOPE.mp3")
+  audio#insulte2(src="insulte/MERDE.mp3")
+  audio#insulte3(src="insulte/CONNARD.mp3")
+  audio#insulte4(src="insulte/PUTAIN.mp3")
+  audio#insulte5(src="insulte/BITE.mp3")
+  audio#insulte6(src="insulte/PUTE.mp3")
+  audio#insulte7(src="insulte/CON.mp3")
+
+
+  script(src="socket.io.min.js") 
+  script(src="front.js") 
